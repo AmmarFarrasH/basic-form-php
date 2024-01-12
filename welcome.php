@@ -13,9 +13,10 @@
     $bahasa = isset($_POST['bahasa']) ? implode(", ", $_POST['bahasa']) : "Tidak ada";
     $bio = $_POST['bio'];
     ?>
-    <h1><strong>Selamat Datang <?= $namaLengkap ?></strong></h1>
-    <h3>Terima kasih telah bergabung di Website Kami. Media Belajar Kita Bersama!</h3>
+    <h1><strong>Selamat Datang</strong></h1>
+    <h3>Terima kasih <u><?= $namaLengkap ?></u> telah bergabung di Website Kami. Media Belajar Kita Bersama!</h3>
     <br>
+    <h3>Data diri anda</h3>
     <h3>Nama Lenkap : <?= $namaLengkap ?></h3>
     <h3>Jenis Kelamin : <?= $jenisKelamin ?></h3>
     <h3>Negara : <?= $negara ?></h3>
